@@ -113,7 +113,6 @@ public class DeliveryUIManger : MonoBehaviour
     {
         if(driver != null)
         {
-            UpdateMoney(driver.currentMoney);
             UpdateBattery(driver.batteryLevel);
             UpdateDeliveryCount(driver.deliveryCount);
         }
