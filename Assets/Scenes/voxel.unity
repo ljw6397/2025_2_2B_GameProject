@@ -214,6 +214,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1353796420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353796422}
+  - component: {fileID: 1353796421}
+  m_Layer: 0
+  m_Name: VoxelChunk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1353796421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353796420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fd3ebd3dbb933418f0464a66edb754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkSize: 64
+  chunkHeight: 64
+  noiseScale: 0.1
+  octaves: 3
+  persistence: 0.5
+  Iacunarity: 2
+  groundLevel: 32
+  heightVariation: 16
+  autoPositionByChunk: 1
+  chunkPosition: {x: 0, y: 0}
+--- !u!4 &1353796422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353796420}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.2674994, y: -0.24726148, z: 7.983185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1568345911
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,3 +368,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 977426585}
   - {fileID: 1568345913}
+  - {fileID: 1353796422}
